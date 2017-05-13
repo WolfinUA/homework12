@@ -1,0 +1,77 @@
+body{
+  background: #20B2AA;
+}
+.container{
+  width: 15.1515151515%;
+  height: 27.7777777778%;
+  margin: 10px 0 0 41.5242424242%;
+}
+.clock{
+  background: #d3a308;
+  border: 10px solid #C0C0C0;
+  border-radius: 50%;
+  position: relative;
+  float: left;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5) inset;
+  margin: 10px auto;
+}
+.zero ,.three,.six,.nine{
+  position: absolute;
+  color: black;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.zero,.six {
+  width: 4px;
+  height: 10px;
+}
+.three,.nine{
+  width: 10px;
+  height: 4px;
+}
+.zero{
+  left: 42%;
+  top: -7px;
+}
+.three{
+   right: 44px;
+   top: 41.9%;
+}
+
+.six{
+   bottom: 44px;
+   left: 44%;
+}
+
+.nine{
+   left: 4px;
+   top: 41.9%;
+}
+.center {
+  position: absolute;
+  top: 51%;
+  left: 51%;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.second{
+   height: 95px;
+   width: 4px;
+   background: #ff4d4d;
+   position: absolute;
+   left: 50.5%;
+   top: 35px;
+   animation: tick 60s infinite steps(60);
+   transform-origin: 2px 100%;
+}
+@keyframes tick {
+  0%{
+    transform: rotateZ(0deg);
+  }
+  100%{
+    transform: rotateZ(360deg);
+  }
+}
