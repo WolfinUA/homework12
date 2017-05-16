@@ -2,9 +2,9 @@ body{
   background: #20B2AA;
 }
 .container{
-  width: 15.1515151515%;
-  height: 27.7777777778%;
-  margin: 10px 0 0 41.5242424242%;
+  width: 15%;
+  height: 28%;
+  margin: 10px 0 0 41.5%;
 }
 .clock{
   background: #d3a308;
@@ -58,12 +58,12 @@ body{
   border-radius: 50%;
 }
 .second{
-   height: 95px;
+   height: 100px;
    width: 4px;
    background: #ff4d4d;
    position: absolute;
    left: 50.5%;
-   top: 35px;
+   top: 30px;
    animation: tick 60s infinite steps(60);
    transform-origin: 2px 100%;
 }
